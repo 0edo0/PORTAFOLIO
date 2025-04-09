@@ -1,0 +1,248 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #5a381a;
+    background-color: #f0f0f0;
+    }
+    
+    /* Encabezado principal */
+header {
+    background-color: #0c2d4a;
+    color: #e4d4b1;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 5px solid #2498d3;
+    }
+    
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    }
+    
+header p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #a0c9e5;
+    }
+    
+    /* Navegación principal */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+    
+nav ul li a {
+    color: #e4d4b1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+nav ul li a:hover {
+    background-color: antiquewhite;
+    color: #1c5281;
+    text-decoration: none;
+    }
+    
+    /* Contenedor general principal */
+body > div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 15px;
+    }
+    
+    /* Sección principal del contenido */
+main {
+    flex: 3;
+    background-color: #e4d4b1;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* Barra lateral */
+aside {
+    flex: 1;
+    background-color: #e2b045;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+    }
+    
+    /* Secciones individuales */
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a0c9e5;
+    }
+    
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    }
+    
+    /* Títulos principales */
+h2 {
+    color: #1c5281;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2498d3;
+    font-size: 1.8em;
+    }
+    
+    /* Subtítulos */
+h3 {
+    color: #997753;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    }
+    
+aside h3 {
+    color: #5a381a;
+    margin-top: 0;
+    border-bottom: 2px solid #997753;
+    padding-bottom: 5px;
+    }
+    
+    /* Párrafos */
+p {
+    margin-bottom: 15px;
+    }
+    
+    /* Imágenes generales */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 3px solid #997753;
+    }
+    
+    /* Imagen en la sección sobre mí */
+ #sobre_mi img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    border-color: #5a381a;
+    }
+    
+    /* Imagen en el aside */
+aside img {
+    margin: 15px auto;
+    border-color: #5a381a;
+    }
+    
+    /* Enlaces generales */
+a {
+    color: #1c5281;
+    text-decoration: none;
+    }
+    
+a:hover {
+    color: #2498d3;
+    text-decoration: underline;
+    }
+    
+    /* Botón de descarga en sección sobre mí */
+#sobre_mi a[download] {
+    display: inline-block;
+    background-color: #997753;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    }
+    
+#sobre_mi a[download]:hover {
+    background-color: #5a381a;
+    color: #ffffff;
+    text-decoration: none;
+    }
+    
+    /* Listas ordenadas y desordenadas */
+ol, ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    }
+    
+    /* Imágenes de la sección proyectos */
+#proyectos img {
+    object-fit: cover;
+    margin: 15px auto;
+    }
+    
+    /* Listas dentro del aside */
+aside ul {
+    list-style: disc;
+    margin-left: 20px;
+    }
+    
+    /* Contenedor de videos */
+.video-container {
+    margin-bottom: 25px;
+    text-align: center;
+    }
+    
+.video-container video {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    }
+    
+.video-descripcion {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+    }
+    
+    /* Reproductor de audio */
+audio {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    }
+    
+    /* Pie de página */
+footer {
+    background-color: #5a381a;
+    color: #e4d4b1;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    }
+    
+footer p {
+    margin-bottom: 8px;
+    }
+    
+footer a {
+    color: #a0c9e5;
+    }
+    
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    }
